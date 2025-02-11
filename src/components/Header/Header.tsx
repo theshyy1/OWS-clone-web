@@ -5,7 +5,7 @@ const Header = () => {
   const { isCollapsed } = useContext(AppContent);
   return (
     <header
-      className={`container fixed top-0 z-[7] flex h-[100px] items-center justify-between bg-[#EBDFD7]`}
+      className={`container fixed top-0 z-[2] flex h-[100px] items-center justify-between bg-[#EBDFD7]`}
     >
       <h3 className="text-2xl font-semibold">Dashboard</h3>
       <div

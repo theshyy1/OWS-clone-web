@@ -4,6 +4,7 @@ import { logoApp, question } from "../../../../constants/images";
 import { categories } from "../../../../constants/resource";
 import { AppContent } from "../../../../contexts/app.context";
 import AsideItem from "./AsideItem";
+import Popover from "../../../../components/Popover";
 
 export interface ICategory {
   id: number;
@@ -56,12 +57,22 @@ const Aside = () => {
           )}
         </button>
       </div>
-      <Link to="/" className="ml-4 flex items-center">
-        <>{logoApp}</>
-        {isCollapsed && (
-          <span className="pl-2 text-2xl font-bold text-white">Promage</span>
-        )}
-      </Link>
+      <Popover
+        renderProp={
+          !isCollapsed && (
+            <div className="border-gray-200 relative z-[7] rounded-md border bg-white px-3 py-2 text-black shadow-sm">
+              Promage Home
+            </div>
+          )
+        }
+      >
+        <Link to="/" className="ml-4 flex items-center">
+          <>{logoApp}</>
+          {isCollapsed && (
+            <span className="pl-2 text-2xl font-bold text-white">Promage</span>
+          )}
+        </Link>
+      </Popover>
       <button className="mb-3 mt-20 flex w-full cursor-pointer items-center rounded-full bg-white py-2 text-black hover:opacity-85">
         <svg
           width="34"
