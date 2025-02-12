@@ -1,35 +1,29 @@
 import { useContext } from "react";
-import { AppContent } from "../../contexts/app.context";
+import { AppContent } from "../contexts/app.context";
 
 const Header = () => {
-  const { isCollapsed } = useContext(AppContent);
+  const { titleHeader } = useContext(AppContent);
   return (
-    <header
-      className={`container fixed top-0 z-[2] flex h-[100px] items-center justify-between bg-[#EBDFD7]`}
-    >
-      <h3 className="text-2xl font-semibold">Dashboard</h3>
-      <div
-        className={`flex items-center ${isCollapsed && "pr-[278px]"} transition-all duration-500`}
-      >
+    <header className="bg-background-dark mx-auto flex h-24 items-center justify-between px-4">
+      <h3 className="text-2xl font-semibold">{titleHeader}</h3>
+      <div className="flex items-center">
         <input
           type="text"
           placeholder="Search for anything"
-          className="rounded-full py-3 pl-5 text-[14px]"
+          className="text-text-light rounded-full border-none py-3 pl-5 text-sm outline-none"
         />
-        <div className="mx-[10px] h-12 w-12 rounded-full bg-white"></div>
-        <article
-          className={`relative flex items-center space-x-1 rounded-full bg-white px-2`}
-        >
+        <div className="mx-2.5 h-12 w-12 rounded-full bg-white" />
+        <article className="flex items-center space-x-1 rounded-full bg-white px-2">
           <img
             src="https://picsum.photos/38/38"
             className="rounded-full object-contain"
             alt=""
           />
           <div className="pl-1 pr-3">
-            <h2 className="text-[14px]">Alex meian</h2>
-            <span className="text-sm text-[#A1A3A5]">Prodcut manager</span>
+            <h2 className="text-sm">Alex meian</h2>
+            <span className="text-text-light text-sm">Prodcut manager</span>
           </div>
-          <span className="absolute right-1 top-4">
+          <span className="">
             <svg
               width="14"
               height="14"

@@ -1,8 +1,10 @@
-const Button = ({ name }: { name: string }) => {
+const Dropdown = ({ name }: { name: string }) => {
   return (
-    <button className="flex items-center rounded-full bg-white py-[6px] pl-3 text-[14px] hover:opacity-60">
-      {name}
-      <span className="px-3">
+    <select className="flex items-center rounded-full bg-white px-[14px] py-[9px] text-sm hover:opacity-60">
+      <option value="">{name}</option>
+      <option value="">1</option>
+      <option value="">2</option>
+      <span className="">
         <svg
           width="14"
           height="14"
@@ -18,8 +20,8 @@ const Button = ({ name }: { name: string }) => {
           />
         </svg>
       </span>
-    </button>
+    </select>
   );
 };
 
-export default Button;
+export default Dropdown;

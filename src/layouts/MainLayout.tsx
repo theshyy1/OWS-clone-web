@@ -1,19 +1,15 @@
 import { Outlet } from "react-router-dom";
-import Header from "../components/Header/Header";
-import Aside from "../screens/Dashboard/components/Aside";
+import Header from "../components/Header";
+import { Sidebar } from "../components/Sidebar/sidebar-component";
 
 const MainLayout = () => {
   return (
     <div className="relative flex h-screen w-full items-center">
-      <div className="h-full">
-        <Aside />
-      </div>
-      <div className={`relative h-full w-full transition-all duration-500`}>
+      <Sidebar />
+      <div className="h-full w-full overflow-hidden transition-all duration-500">
         <Header />
-        <div className="h-full w-full overflow-y-auto bg-[#EBDFD7] pt-[100px]">
-          <div className="container">
-            <Outlet />
-          </div>
+        <div className="bg-background-dark mx-auto h-full w-full overflow-y-auto px-4">
+          <Outlet />
         </div>
       </div>
     </div>

@@ -9,19 +9,21 @@ export default {
       black: "#000",
       white: "#fff",
       orange: "#E65F2B",
+      background: {
+        dark: "#EBDFD7",
+        light: "#F2EAE5",
+      },
+      text: {
+        light: "#9B9B9B",
+      },
+      error: "#dc3545",
+      success: "#28a745",
+      warning: "#ffc107",
     },
   },
   plugins: [
     plugin(function ({ addComponents, theme }) {
-      addComponents({
-        ".container": {
-          maxWidth: theme("colums.6xl"),
-          marginLeft: "auto",
-          marginRight: "auto",
-          paddingLeft: theme("spacing.4"),
-          paddingRight: theme("spacing.4"),
-        },
-      });
+      addComponents({});
     }),
   ],
 };
