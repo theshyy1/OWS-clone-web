@@ -25,7 +25,7 @@ const TaskItem = ({ task }: Props) => {
               xmlns="http://www.w3.org/2000/svg"
             >
               <circle cx="9" cy="9" r="9" fill="#E65F2B" />
-              <path d="M6 9L8 11L12 7" stroke="white" stroke-linecap="round" />
+              <path d="M6 9L8 11L12 7" stroke="white" strokeLinecap="round" />
             </svg>
           ) : (
             <svg
@@ -40,7 +40,7 @@ const TaskItem = ({ task }: Props) => {
                 cy="10"
                 r="9"
                 stroke="#060606"
-                stroke-opacity="0.64"
+                strokeOpacity="0.64"
               />
             </svg>
           )}

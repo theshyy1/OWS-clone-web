@@ -12,7 +12,7 @@ const inititalState: AppContextInterface = {
   titleHeader: "",
   setTitleHeader: () => null,
 };
-export const AppContent = createContext(inititalState);
+export const AppContext = createContext(inititalState);
 
 export const AppProvider = ({ children }: { children: React.ReactNode }) => {
   const [titleHeader, setTitleHeader] = useState("");
@@ -27,6 +27,6 @@ export const AppProvider = ({ children }: { children: React.ReactNode }) => {
     [isCollapsed, setIsCollapsed, titleHeader, setTitleHeader],
   );
   return (
-    <AppContent.Provider value={contextValue}>{children}</AppContent.Provider>
+    <AppContext.Provider value={contextValue}>{children}</AppContext.Provider>
   );
 };

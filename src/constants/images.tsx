@@ -14,14 +14,14 @@ export const question = (
         height="48"
         rx="24"
         fill="#E65F2B"
-        shape-rendering="crispEdges"
+        shapeRendering="crispEdges"
       />
       <path
         d="M36.2656 27.8778C36.4859 27.2517 36.9206 26.7238 37.4928 26.3875C38.065 26.0512 38.7377 25.9283 39.3919 26.0405C40.046 26.1527 40.6394 26.4928 41.0668 27.0005C41.4942 27.5083 41.7282 28.1509 41.7272 28.8146C41.7272 30.6882 38.9168 31.625 38.9168 31.625M38.9512 35.375H38.9637M50.25 31C50.25 37.2132 45.2132 42.25 39 42.25C32.7868 42.25 27.75 37.2132 27.75 31C27.75 24.7868 32.7868 19.75 39 19.75C45.2132 19.75 50.25 24.7868 50.25 31Z"
         stroke="white"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </g>
     <defs>
@@ -32,7 +32,7 @@ export const question = (
         width="78"
         height="78"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
         <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
@@ -152,7 +152,7 @@ export const logoApp = (
         width="11.8242"
         height="13.6816"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
         <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
@@ -187,7 +187,7 @@ export const logoApp = (
         width="13.4023"
         height="13.6899"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
         <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
@@ -222,7 +222,7 @@ export const logoApp = (
         width="13.7686"
         height="13.3274"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
         <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
@@ -257,7 +257,7 @@ export const logoApp = (
         width="13.7598"
         height="11.762"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
         <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
@@ -292,7 +292,7 @@ export const logoApp = (
         width="13.7686"
         height="13.3274"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
         <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
@@ -327,7 +327,7 @@ export const logoApp = (
         width="13.4023"
         height="13.6899"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
         <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
@@ -362,7 +362,7 @@ export const logoApp = (
         width="11.8242"
         height="13.6819"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
         <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
@@ -397,7 +397,7 @@ export const logoApp = (
         width="13.4023"
         height="13.6899"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
         <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
@@ -432,7 +432,7 @@ export const logoApp = (
         width="13.7686"
         height="13.3274"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
         <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
@@ -467,7 +467,7 @@ export const logoApp = (
         width="13.7598"
         height="11.762"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
         <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
@@ -502,7 +502,7 @@ export const logoApp = (
         width="13.7686"
         height="13.3274"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
         <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
@@ -537,7 +537,7 @@ export const logoApp = (
         width="13.4023"
         height="12.3694"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
         <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
@@ -580,7 +580,7 @@ export const overallImage = (
     <path
       d="M316.54 174C319.832 174 322.512 171.33 322.381 168.041C321.679 150.508 317.885 133.221 311.158 116.98C303.67 98.9027 292.695 82.477 278.859 68.6411C265.023 54.8052 248.597 43.8299 230.52 36.3419C212.442 28.854 193.067 25 173.5 25C153.933 25 134.558 28.854 116.48 36.342C98.4026 43.8299 81.977 54.8052 68.1411 68.6411C54.3052 82.477 43.3299 98.9027 35.8419 116.98C29.115 133.221 25.3209 150.508 24.6192 168.041C24.4876 171.33 27.1684 174 30.46 174C33.7516 174 36.4065 171.33 36.5495 168.042C37.2442 152.075 40.7267 136.336 46.8546 121.542C53.7435 104.91 63.8407 89.7989 76.5698 77.0698C89.2989 64.3408 104.41 54.2435 121.042 47.3546C137.673 40.4657 155.498 36.92 173.5 36.92C191.502 36.92 209.327 40.4657 225.958 47.3546C242.59 54.2435 257.701 64.3407 270.43 77.0698C283.159 89.7989 293.257 104.91 300.145 121.542C306.273 136.336 309.756 152.075 310.45 168.042C310.594 171.33 313.248 174 316.54 174Z"
       fill="black"
-      fill-opacity="0.08"
+      fillOpacity="0.08"
     />
     <g filter="url(#filter0_i_1_1841)">
       <path
@@ -591,338 +591,338 @@ export const overallImage = (
     <path
       d="M0.782311 162.289L14.562 163.274"
       stroke="#060606"
-      stroke-opacity="0.3"
-      stroke-miterlimit="10"
+      strokeOpacity="0.3"
+      strokeMiterlimit="10"
     />
     <path
       d="M1.60611 153.56L15.3203 155.246"
       stroke="#060606"
-      stroke-opacity="0.3"
-      stroke-miterlimit="10"
+      strokeOpacity="0.3"
+      strokeMiterlimit="10"
     />
     <path
       d="M2.87717 144.885L16.48 147.26"
       stroke="#060606"
-      stroke-opacity="0.3"
-      stroke-miterlimit="10"
+      strokeOpacity="0.3"
+      strokeMiterlimit="10"
     />
     <path
       d="M4.57419 136.282L18.0425 139.358"
       stroke="#060606"
-      stroke-opacity="0.3"
-      stroke-miterlimit="10"
+      strokeOpacity="0.3"
+      strokeMiterlimit="10"
     />
     <path
       d="M6.71994 127.788L20.0195 131.53"
       stroke="#060606"
-      stroke-opacity="0.3"
-      stroke-miterlimit="10"
+      strokeOpacity="0.3"
+      strokeMiterlimit="10"
     />
     <path
       d="M9.29045 119.402L22.3867 123.821"
       stroke="#060606"
-      stroke-opacity="0.3"
-      stroke-miterlimit="10"
+      strokeOpacity="0.3"
+      strokeMiterlimit="10"
     />
     <path
       d="M12.2929 111.159L25.1284 116.242"
       stroke="#060606"
-      stroke-opacity="0.3"
-      stroke-miterlimit="10"
+      strokeOpacity="0.3"
+      strokeMiterlimit="10"
     />
     <path
       d="M15.7025 103.082L28.2773 108.819"
       stroke="#060606"
-      stroke-opacity="0.3"
-      stroke-miterlimit="10"
+      strokeOpacity="0.3"
+      strokeMiterlimit="10"
     />
     <path
       d="M19.5204 95.1926L31.7773 101.559"
       stroke="#060606"
-      stroke-opacity="0.3"
-      stroke-miterlimit="10"
+      strokeOpacity="0.3"
+      strokeMiterlimit="10"
     />
     <path
       d="M23.7401 87.5046L35.6562 94.4885"
       stroke="#060606"
-      stroke-opacity="0.3"
-      stroke-miterlimit="10"
+      strokeOpacity="0.3"
+      strokeMiterlimit="10"
     />
     <path
       d="M28.3381 80.039L39.8906 87.6174"
       stroke="#060606"
-      stroke-opacity="0.3"
-      stroke-miterlimit="10"
+      strokeOpacity="0.3"
+      strokeMiterlimit="10"
     />
     <path
       d="M33.3102 72.8197L44.4648 80.9807"
       stroke="#060606"
-      stroke-opacity="0.3"
-      stroke-miterlimit="10"
+      strokeOpacity="0.3"
+      strokeMiterlimit="10"
     />
     <path
       d="M38.6486 65.8697L49.3711 74.5784"
       stroke="#060606"
-      stroke-opacity="0.3"
-      stroke-miterlimit="10"
+      strokeOpacity="0.3"
+      strokeMiterlimit="10"
     />
     <path
       d="M44.3417 59.1894L54.5977 68.4338"
       stroke="#060606"
-      stroke-opacity="0.3"
-      stroke-miterlimit="10"
+      strokeOpacity="0.3"
+      strokeMiterlimit="10"
     />
     <path
       d="M50.3546 52.8095L60.1328 62.5667"
       stroke="#060606"
-      stroke-opacity="0.3"
-      stroke-miterlimit="10"
+      strokeOpacity="0.3"
+      strokeMiterlimit="10"
     />
     <path
       d="M56.6865 46.7461L65.9526 56.9924"
       stroke="#060606"
-      stroke-opacity="0.3"
-      stroke-miterlimit="10"
+      strokeOpacity="0.3"
+      strokeMiterlimit="10"
     />
     <path
       d="M63.3232 41.0202L72.0547 51.7209"
       stroke="#060606"
-      stroke-opacity="0.3"
-      stroke-miterlimit="10"
+      strokeOpacity="0.3"
+      strokeMiterlimit="10"
     />
     <path
       d="M70.2439 35.6301L78.418 46.762"
       stroke="#060606"
-      stroke-opacity="0.3"
-      stroke-miterlimit="10"
+      strokeOpacity="0.3"
+      strokeMiterlimit="10"
     />
     <path
       d="M92.5176 21.6766L98.9062 33.928"
       stroke="#060606"
-      stroke-opacity="0.3"
-      stroke-miterlimit="10"
+      strokeOpacity="0.3"
+      strokeMiterlimit="10"
     />
     <path
       d="M100.388 17.8046L106.14 30.3596"
       stroke="#060606"
-      stroke-opacity="0.3"
-      stroke-miterlimit="10"
+      strokeOpacity="0.3"
+      strokeMiterlimit="10"
     />
     <path
       d="M108.438 14.3387L113.542 27.1741"
       stroke="#060606"
-      stroke-opacity="0.3"
-      stroke-miterlimit="10"
+      strokeOpacity="0.3"
+      strokeMiterlimit="10"
     />
     <path
       d="M116.66 11.2784L121.105 24.3596"
       stroke="#060606"
-      stroke-opacity="0.3"
-      stroke-miterlimit="10"
+      strokeOpacity="0.3"
+      strokeMiterlimit="10"
     />
     <path
       d="M125.021 8.65489L128.797 21.9358"
       stroke="#060606"
-      stroke-opacity="0.3"
-      stroke-miterlimit="10"
+      strokeOpacity="0.3"
+      strokeMiterlimit="10"
     />
     <path
       d="M133.507 6.4491L136.602 19.9065"
       stroke="#060606"
-      stroke-opacity="0.3"
-      stroke-miterlimit="10"
+      strokeOpacity="0.3"
+      strokeMiterlimit="10"
     />
     <path
       d="M142.094 4.68035L144.496 18.2795"
       stroke="#060606"
-      stroke-opacity="0.3"
-      stroke-miterlimit="10"
+      strokeOpacity="0.3"
+      strokeMiterlimit="10"
     />
     <path
       d="M150.766 3.35243L152.465 17.0588"
       stroke="#060606"
-      stroke-opacity="0.3"
-      stroke-miterlimit="10"
+      strokeOpacity="0.3"
+      strokeMiterlimit="10"
     />
     <path
       d="M159.489 2.47109L160.496 16.2502"
       stroke="#060606"
-      stroke-opacity="0.3"
-      stroke-miterlimit="10"
+      strokeOpacity="0.3"
+      strokeMiterlimit="10"
     />
     <path
       d="M168.242 2.02848L168.547 15.8342"
       stroke="#060606"
-      stroke-opacity="0.3"
-      stroke-miterlimit="10"
+      strokeOpacity="0.3"
+      strokeMiterlimit="10"
     />
     <path
       d="M177.015 2.03583L176.606 15.845"
       stroke="#060606"
-      stroke-opacity="0.3"
-      stroke-miterlimit="10"
+      strokeOpacity="0.3"
+      strokeMiterlimit="10"
     />
     <path
       d="M185.768 2.49223L184.657 16.259"
       stroke="#060606"
-      stroke-opacity="0.3"
-      stroke-miterlimit="10"
+      strokeOpacity="0.3"
+      strokeMiterlimit="10"
     />
     <path
       d="M194.486 3.39723L192.686 17.0871"
       stroke="#060606"
-      stroke-opacity="0.3"
-      stroke-miterlimit="10"
+      strokeOpacity="0.3"
+      strokeMiterlimit="10"
     />
     <path
       d="M203.15 4.73734L200.66 18.3274"
       stroke="#060606"
-      stroke-opacity="0.3"
-      stroke-miterlimit="10"
+      strokeOpacity="0.3"
+      strokeMiterlimit="10"
     />
     <path
       d="M211.742 6.51612L208.551 19.9601"
       stroke="#060606"
-      stroke-opacity="0.3"
-      stroke-miterlimit="10"
+      strokeOpacity="0.3"
+      strokeMiterlimit="10"
     />
     <path
       d="M220.22 8.74126L216.352 21.9934"
       stroke="#060606"
-      stroke-opacity="0.3"
-      stroke-miterlimit="10"
+      strokeOpacity="0.3"
+      strokeMiterlimit="10"
     />
     <path
       d="M228.585 11.3784L224.04 24.4271"
       stroke="#060606"
-      stroke-opacity="0.3"
-      stroke-miterlimit="10"
+      strokeOpacity="0.3"
+      strokeMiterlimit="10"
     />
     <path
       d="M236.793 14.4541L231.595 27.2537"
       stroke="#060606"
-      stroke-opacity="0.3"
-      stroke-miterlimit="10"
+      strokeOpacity="0.3"
+      strokeMiterlimit="10"
     />
     <path
       d="M244.845 17.9393L238.994 30.4553"
       stroke="#060606"
-      stroke-opacity="0.3"
-      stroke-miterlimit="10"
+      strokeOpacity="0.3"
+      strokeMiterlimit="10"
     />
     <path
       d="M252.697 21.8282L246.228 34.0264"
       stroke="#060606"
-      stroke-opacity="0.3"
-      stroke-miterlimit="10"
+      strokeOpacity="0.3"
+      strokeMiterlimit="10"
     />
     <path
       d="M260.349 26.1053L253.262 37.9627"
       stroke="#060606"
-      stroke-opacity="0.3"
-      stroke-miterlimit="10"
+      strokeOpacity="0.3"
+      strokeMiterlimit="10"
     />
     <path
       d="M281.855 41.2204L273.044 51.8611"
       stroke="#060606"
-      stroke-opacity="0.3"
-      stroke-miterlimit="10"
+      strokeOpacity="0.3"
+      strokeMiterlimit="10"
     />
     <path
       d="M288.479 46.9581L279.143 57.1324"
       stroke="#060606"
-      stroke-opacity="0.3"
-      stroke-miterlimit="10"
+      strokeOpacity="0.3"
+      strokeMiterlimit="10"
     />
     <path
       d="M294.798 53.0392L284.961 62.7244"
       stroke="#060606"
-      stroke-opacity="0.3"
-      stroke-miterlimit="10"
+      strokeOpacity="0.3"
+      strokeMiterlimit="10"
     />
     <path
       d="M300.804 59.4265L290.478 68.5996"
       stroke="#060606"
-      stroke-opacity="0.3"
-      stroke-miterlimit="10"
+      strokeOpacity="0.3"
+      strokeMiterlimit="10"
     />
     <path
       d="M306.485 66.1102L295.705 74.7487"
       stroke="#060606"
-      stroke-opacity="0.3"
-      stroke-miterlimit="10"
+      strokeOpacity="0.3"
+      strokeMiterlimit="10"
     />
     <path
       d="M311.807 73.0766L300.607 81.1463"
       stroke="#060606"
-      stroke-opacity="0.3"
-      stroke-miterlimit="10"
+      strokeOpacity="0.3"
+      strokeMiterlimit="10"
     />
     <path
       d="M316.765 80.3044L305.169 87.7941"
       stroke="#060606"
-      stroke-opacity="0.3"
-      stroke-miterlimit="10"
+      strokeOpacity="0.3"
+      strokeMiterlimit="10"
     />
     <path
       d="M321.356 87.7703L309.387 94.6687"
       stroke="#060606"
-      stroke-opacity="0.3"
-      stroke-miterlimit="10"
+      strokeOpacity="0.3"
+      strokeMiterlimit="10"
     />
     <path
       d="M325.564 95.472L313.257 101.745"
       stroke="#060606"
-      stroke-opacity="0.3"
-      stroke-miterlimit="10"
+      strokeOpacity="0.3"
+      strokeMiterlimit="10"
     />
     <path
       d="M329.366 103.367L316.754 109.015"
       stroke="#060606"
-      stroke-opacity="0.3"
-      stroke-miterlimit="10"
+      strokeOpacity="0.3"
+      strokeMiterlimit="10"
     />
     <path
       d="M332.761 111.451L319.88 116.439"
       stroke="#060606"
-      stroke-opacity="0.3"
-      stroke-miterlimit="10"
+      strokeOpacity="0.3"
+      strokeMiterlimit="10"
     />
     <path
       d="M335.741 119.704L322.627 124.023"
       stroke="#060606"
-      stroke-opacity="0.3"
-      stroke-miterlimit="10"
+      strokeOpacity="0.3"
+      strokeMiterlimit="10"
     />
     <path
       d="M338.304 128.091L324.979 131.739"
       stroke="#060606"
-      stroke-opacity="0.3"
-      stroke-miterlimit="10"
+      strokeOpacity="0.3"
+      strokeMiterlimit="10"
     />
     <path
       d="M340.433 136.586L326.943 139.565"
       stroke="#060606"
-      stroke-opacity="0.3"
-      stroke-miterlimit="10"
+      strokeOpacity="0.3"
+      strokeMiterlimit="10"
     />
     <path
       d="M342.117 145.193L328.496 147.48"
       stroke="#060606"
-      stroke-opacity="0.3"
-      stroke-miterlimit="10"
+      strokeOpacity="0.3"
+      strokeMiterlimit="10"
     />
     <path
       d="M343.367 153.876L329.65 155.459"
       stroke="#060606"
-      stroke-opacity="0.3"
-      stroke-miterlimit="10"
+      strokeOpacity="0.3"
+      strokeMiterlimit="10"
     />
     <path
       d="M344.179 162.599L330.39 163.491"
       stroke="#060606"
-      stroke-opacity="0.3"
-      stroke-miterlimit="10"
+      strokeOpacity="0.3"
+      strokeMiterlimit="10"
     />
     <path
       d="M7.492 174.484L7.108 174.484C4.72 174.484 3.028 173.188 3.028 171.292C3.028 169.408 4.72 168.112 7.108 168.112L7.492 168.112C10 168.112 11.572 169.408 11.572 171.292C11.572 173.188 10 174.484 7.492 174.484ZM7.456 169.132L7.144 169.132C5.152 169.132 3.952 169.996 3.952 171.292C3.952 172.6 5.152 173.464 7.144 173.464L7.456 173.464C9.448 173.464 10.648 172.6 10.648 171.292C10.648 169.996 9.448 169.132 7.456 169.132Z"
@@ -972,7 +972,7 @@ export const overallImage = (
         width="77.481"
         height="129.349"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
         <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feBlend
@@ -1007,7 +1007,7 @@ export const overallImage = (
         width="145.978"
         height="39.9348"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
         <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
@@ -1060,7 +1060,7 @@ export const overallImage = (
         width="101.262"
         height="117.114"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
         <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix

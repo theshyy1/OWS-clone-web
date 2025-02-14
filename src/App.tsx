@@ -1,16 +1,18 @@
 import { useContext, useEffect } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
-import { AppContent } from "./contexts/app.context";
 import MainLayout from "./layouts/MainLayout";
 import Dashboard from "./screens/Dashboard/dashboard-screen";
 import { NotFound } from "./screens/Notfound/Notfound";
 import Projects from "./screens/Projects";
 import RegisterForm from "./screens/RegisterForm";
 import Tasks from "./screens/Tasks";
+import { TodoScreen } from "./screens/TodoList/todos-screen";
+import { AppContext } from "./contexts/app.context";
+import { TodosProvider } from "./screens/TodoList/contexts/todos-context";
 
 function App() {
   const location = useLocation();
-  const { setTitleHeader } = useContext(AppContent);
+  const { setTitleHeader } = useContext(AppContext);
 
   useEffect(() => {
     switch (location.pathname) {
@@ -25,6 +27,9 @@ function App() {
         break;
       case "/demo":
         setTitleHeader("Demo");
+        break;
+      case "/todolist":
+        setTitleHeader("ToDolist");
         break;
       case "/register":
         setTitleHeader("Register");
@@ -41,6 +46,14 @@ function App() {
         <Route index element={<Dashboard />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/tasks" element={<Tasks />} />
+        <Route
+          path="/todolist"
+          element={
+            <TodosProvider>
+              <TodoScreen />
+            </TodosProvider>
+          }
+        />
       </Route>
       <Route path="">
         <Route path="/register" element={<RegisterForm />} />

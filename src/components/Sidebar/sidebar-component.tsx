@@ -2,7 +2,7 @@ import { JSX, useContext } from "react";
 import { Link } from "react-router-dom";
 import { logoApp, question } from "../../constants/images";
 import { categories } from "../../constants/resource";
-import { AppContent } from "../../contexts/app.context";
+import { AppContext } from "../../contexts/app.context";
 import Popover from "../Popover";
 import { SidebarItem } from "./SidebarItem";
 
@@ -13,7 +13,7 @@ export interface ICategory {
   link: string;
 }
 export const Sidebar = () => {
-  const { isCollapsed, setIsCollapsed } = useContext(AppContent);
+  const { isCollapsed, setIsCollapsed } = useContext(AppContext);
   const handleCollapsed = () => setIsCollapsed((prev) => !prev);
   return (
     <aside
@@ -95,8 +95,8 @@ export const Sidebar = () => {
           >
             <rect width="34" height="34" rx="17" fill="#E65F2B" />
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M17 8C17.5523 8 18 8.44772 18 9V16H25C25.5523 16 26 16.4477 26 17C26 17.5523 25.5523 18 25 18H18V25C18 25.5523 17.5523 26 17 26C16.4477 26 16 25.5523 16 25V18H9C8.44772 18 8 17.5523 8 17C8 16.4477 8.44772 16 9 16H16V9C16 8.44772 16.4477 8 17 8Z"
               fill="white"
             />

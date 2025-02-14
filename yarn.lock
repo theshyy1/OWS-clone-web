@@ -1301,6 +1301,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"clsx@npm:^2.1.1":
+  version: 2.1.1
+  resolution: "clsx@npm:2.1.1"
+  checksum: cdfb57fa6c7649bbff98d9028c2f0de2f91c86f551179541cf784b1cfdc1562dcb951955f46d54d930a3879931a980e32a46b598acaea274728dbe068deca919
+  languageName: node
+  linkType: hard
+
 "color-convert@npm:^2.0.1":
   version: 2.0.1
   resolution: "color-convert@npm:2.0.1"
@@ -2590,9 +2597,11 @@ __metadata:
     react-collapsed: "npm:^4.2.0"
     react-dom: "npm:^18.3.1"
     react-router-dom: "npm:^7.1.5"
+    react-toastify: "npm:^11.0.3"
     tailwindcss: "npm:^3.4.17"
     typescript: "npm:~5.6.2"
     typescript-eslint: "npm:^8.11.0"
+    uuid: "npm:^11.0.5"
     vite: "npm:^5.4.10"
   languageName: unknown
   linkType: soft
@@ -2964,6 +2973,18 @@ __metadata:
     react-dom:
       optional: true
   checksum: 3802ff0e0419aa53c1824b1ad2ebac6facb918306c67ff64ed86b5cbc49197c15f077b84e425f57beb24dd01cd5818a100da5269b8e160deee62b06fda008b56
+  languageName: node
+  linkType: hard
+
+"react-toastify@npm:^11.0.3":
+  version: 11.0.3
+  resolution: "react-toastify@npm:11.0.3"
+  dependencies:
+    clsx: "npm:^2.1.1"
+  peerDependencies:
+    react: ^18 || ^19
+    react-dom: ^18 || ^19
+  checksum: 3b8320873803ee73d27fccbee2890221bc64cd7f6e0082244a6044c77871ec559bac59cdd771f06e586a427cbd575780bbcfb47add0cca3137317ec5debd92fb
   languageName: node
   linkType: hard
 
@@ -3535,6 +3556,15 @@ __metadata:
   version: 1.0.2
   resolution: "util-deprecate@npm:1.0.2"
   checksum: 474acf1146cb2701fe3b074892217553dfcf9a031280919ba1b8d651a068c9b15d863b7303cb15bd00a862b498e6cf4ad7b4a08fb134edd5a6f7641681cb54a2
+  languageName: node
+  linkType: hard
+
+"uuid@npm:^11.0.5":
+  version: 11.0.5
+  resolution: "uuid@npm:11.0.5"
+  bin:
+    uuid: dist/esm/bin/uuid
+  checksum: 0594ecdff3051e15d4a2c614b4c72e73af373bde0a5d156512353c01156975295d024ae8d7151846d7bd4d22ccd251b16ed51b4318fa71505fb20ad984102dc1
   languageName: node
   linkType: hard
 

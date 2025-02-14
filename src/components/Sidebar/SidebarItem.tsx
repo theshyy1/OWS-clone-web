@@ -1,6 +1,6 @@
 import { JSX, useContext } from "react";
 import { NavLink } from "react-router-dom";
-import { AppContent } from "../../contexts/app.context";
+import { AppContext } from "../../contexts/app.context";
 import Popover from "../Popover";
 
 export interface ICategory {
@@ -12,7 +12,7 @@ export interface ICategory {
 
 export const SidebarItem = (props: ICategory) => {
   const { id, title, icon, link } = props;
-  const { isCollapsed } = useContext(AppContent);
+  const { isCollapsed } = useContext(AppContext);
 
   return (
     <Popover
