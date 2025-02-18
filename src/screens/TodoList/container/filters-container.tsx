@@ -5,8 +5,8 @@ import { ModalContext } from "../contexts/modal-context";
 import { FilterContext } from "../contexts/filters-context";
 
 export const FiltersContainer = () => {
-  const { todos, handleDeleteSelected } = useContext(TodosContext);
   const [isFocus, setFocus] = useState<"all" | "completed" | "active">("all");
+  const { todos, handleDeleteSelected } = useContext(TodosContext);
   const { openAddTodoModal, setModalMark } = useContext(ModalContext);
   const { setFilter } = useContext(FilterContext);
 

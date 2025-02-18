@@ -19,44 +19,6 @@ export const Sidebar = () => {
     <aside
       className={`relative h-full ${isCollapsed ? "w-[260px] pl-[30px] pr-[46px]" : "flex w-[100px] flex-col items-center"} truncate bg-black text-white transition-all duration-500`}
     >
-      <div className="absolute right-0 top-8">
-        <button
-          onClick={handleCollapsed}
-          className="flex h-7 w-7 items-center justify-center rounded-full bg-white p-2 text-black hover:opacity-85"
-        >
-          {isCollapsed ? (
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="size-6"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M15.75 19.5 8.25 12l7.5-7.5"
-              />
-            </svg>
-          ) : (
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="size-6"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="m8.25 4.5 7.5 7.5-7.5 7.5"
-              />
-            </svg>
-          )}
-        </button>
-      </div>
       <Popover
         renderProp={
           !isCollapsed && (
@@ -66,13 +28,49 @@ export const Sidebar = () => {
           )
         }
       >
-        <Link to="/" className="flex items-center pt-8">
-          <span>{logoApp}</span>
+        <Link to="/" className="flex items-center pb-4 pt-8">
+          <span className="">{logoApp}</span>
           {isCollapsed && (
             <span className="pl-2 text-2xl font-bold text-white">Promage</span>
           )}
         </Link>
       </Popover>
+      <div className="flex w-full justify-center" onClick={handleCollapsed}>
+        <div className="bg-background-light flex w-[40px] rounded border p-1">
+          <span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="size-4 fill-orange"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M15.75 19.5 8.25 12l7.5-7.5"
+              />
+            </svg>
+          </span>
+          <span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="size-4 fill-orange"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="m8.25 4.5 7.5 7.5-7.5 7.5"
+              />
+            </svg>
+          </span>
+        </div>
+      </div>
       <Popover
         renderProp={
           !isCollapsed && (

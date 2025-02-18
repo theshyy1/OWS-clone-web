@@ -8,6 +8,7 @@ import { EmptyContainer } from "./components/empty";
 import { ModalContext } from "./contexts/modal-context";
 import { ShowTodo } from "./container/showtodos-modal";
 import { ListStarModal } from "./container/list-star-modal";
+import { AnimatePresence, motion } from "framer-motion";
 
 export const TodoScreen = () => {
   const { todos } = useContext(TodosContext);
@@ -25,22 +26,40 @@ export const TodoScreen = () => {
       <span className="text-error block pb-6 text-center text-6xl font-bold italic underline">
         Just do it
       </span>
-      {isModalOpen && (
-        <div
-          onClick={cancelAddTodoModal}
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 transition-all duration-500"
-        >
-          <NewTodoContainer onClose={cancelAddTodoModal} />
-        </div>
-      )}
-      {isShow && (
-        <div
-          onClick={() => setShow(false)}
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 transition-all duration-500"
-        >
-          <ShowTodo onClose={() => setShow(false)} />
-        </div>
-      )}
+      <AnimatePresence>
+        {isModalOpen && (
+          <motion.div
+            initial={{ opacity: 0, y: "100%", scale: 0 }}
+            animate={{ opacity: 1, y: "0%", scale: 1 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 1 }}
+          >
+            <div
+              onClick={cancelAddTodoModal}
+              className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 transition-all duration-500"
+            >
+              <NewTodoContainer onClose={cancelAddTodoModal} />
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+      <AnimatePresence>
+        {isShow && (
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.3 }}
+          >
+            <div
+              onClick={() => setShow(false)}
+              className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 transition-all duration-500"
+            >
+              <ShowTodo onClose={() => setShow(false)} />
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
       {isModalMark && (
         <div
           onClick={() => setModalMark(false)}

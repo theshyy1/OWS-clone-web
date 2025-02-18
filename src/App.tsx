@@ -1,14 +1,14 @@
-import { useContext, useEffect } from "react";
+import { Suspense, useContext, useEffect } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
+import { AppContext } from "./contexts/app.context";
 import MainLayout from "./layouts/MainLayout";
 import Dashboard from "./screens/Dashboard/dashboard-screen";
 import { NotFound } from "./screens/Notfound/Notfound";
-import Projects from "./screens/Projects";
+import { ProjectScreen } from "./screens/Projects/projects-screen";
 import RegisterForm from "./screens/RegisterForm";
-import Tasks from "./screens/Tasks";
-import { TodoScreen } from "./screens/TodoList/todos-screen";
-import { AppContext } from "./contexts/app.context";
+import { TaskScreen } from "./screens/Tasks/task-screen";
 import { TodosProvider } from "./screens/TodoList/contexts/todos-context";
+import { TodoScreen } from "./screens/TodoList/todos-screen";
 
 function App() {
   const location = useLocation();
@@ -44,14 +44,16 @@ function App() {
     <Routes>
       <Route path="/" element={<MainLayout />}>
         <Route index element={<Dashboard />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/tasks" element={<Tasks />} />
+        <Route path="/projects" element={<ProjectScreen />} />
+        <Route path="/tasks" element={<TaskScreen />} />
         <Route
           path="/todolist"
           element={
-            <TodosProvider>
-              <TodoScreen />
-            </TodosProvider>
+            <Suspense>
+              <TodosProvider>
+                <TodoScreen />
+              </TodosProvider>
+            </Suspense>
           }
         />
       </Route>

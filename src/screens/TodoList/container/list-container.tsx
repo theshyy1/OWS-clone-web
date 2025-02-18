@@ -18,7 +18,7 @@ export const ListContainer = () => {
     }
   };
   return (
-    <ul className="mx-auto h-[450px] w-[80%] space-y-3 overflow-y-auto px-5 py-5">
+    <ul className="mx-auto h-[460px] w-[80%] space-y-3 overflow-y-auto px-5 pb-10">
       {getFilterTodos()?.map((todo: ITodos, index) => (
         <TodoItem key={todo.id} order={index} {...todo} />
       ))}
